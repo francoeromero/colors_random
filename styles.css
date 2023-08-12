@@ -12,6 +12,47 @@ body{
     flex-direction: column;
 }
 
+.name{
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+    /* rotulo */
+    .content-circle{
+        display: flex;
+        width: 100%;
+      }
+      .circle{
+        width: 1rem;
+        margin-right: 8px;
+        height: 1rem;
+        border-radius: 50%;
+      }
+      .rojo{
+        background: #f05b5b;
+      }
+      .amarillo{
+        background: #f9d959;
+      }
+      .verde{
+        background: #4CAF50;
+      }
+      .content-name{
+        width: 100%;
+        height: 1rem;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .rotulo{
+        display: flex;
+        /* border: 2px solid red; */
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        
+      }
+      .ancho, .longitud, #result{
+        color: black;
+      }
 .centrar-flex{
     display: flex;
     justify-content: center;
@@ -19,11 +60,13 @@ body{
 }
 #contenedor{
     height: 220px;
-    width: 550px;
+    width: 400px;
     background-color: white;
-    border: 5px solid black;
+    /* border: 5px solid black; */
+    border-radius: 20px;
     flex-direction: column;
     padding: 2rem;
+    box-shadow: 10px 10px 30px black;
 }
 #color{
     font-size: 70px;
@@ -44,6 +87,11 @@ button{
 
 #boton-copiar{
     background-color: #5e5e5e;
+    scale: .7;
+}
+#boton-color{
+    scale: .7;
+    margin-bottom: -1rem;
 }
 #boton-copiar:hover{
     background-color: #393939;
